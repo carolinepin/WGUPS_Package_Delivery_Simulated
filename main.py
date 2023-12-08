@@ -228,7 +228,8 @@ def main():
             '\t2) Print the information of one package at a specified time \n'
             '\t3) Print all information of all packages with a specified deadline at a specified time\n'
             '\t4) Print Truck Info\n'
-            '\t5) All Packages Summary')
+            '\t5) All Packages Summary\n'
+             '\t0) Quit\n')
     userTime = custTime.customTime()
     userInput = input('Enter number option: \n')
     while userInput != '0':
@@ -299,6 +300,13 @@ def main():
             else:
                 userTime.setTime(int(h), int(m), isAM)
                 displayPackagesCondensed(finalHT, userTime)
+        print('Welcome to the WGUPS Terminal! Please select from the following menu: \n'
+              '\t1) Print all package information of all packages at a specific time\n '
+              '\t2) Print the information of one package at a specified time \n'
+              '\t3) Print all information of all packages with a specified deadline at a specified time\n'
+              '\t4) Print Truck Info\n'
+              '\t5) All Packages Summary\n'
+              '\t0) Quit\n')
         userInput = input('Enter number option: \n')
     print('---------------------Thank you for using the WGUPS Terminal. Have a nice day!-----------------------------------------')
 
